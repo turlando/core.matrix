@@ -2163,7 +2163,7 @@
 (extend-protocol mp/PSpecialisedConstructors
   #?(:clj Object :cljs object)
     (identity-matrix [m dims]
-      (mp/diagonal-matrix m (repeat dims 1.0)))
+      (mp/diagonal-matrix m (repeat dims 1)))
     (diagonal-matrix [m diagonal-values]
       (let [dims (count diagonal-values)
             diagonal-values (mp/convert-to-nested-vectors diagonal-values)
