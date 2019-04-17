@@ -19,7 +19,8 @@
             [clojure.core.matrix.utils :as u])
   #?@(:clj [(:require
               [clojure.core.matrix.macros :refer [TODO error scalar-coerce c-for doseq-indexed array?]]
-              [clojure.core.matrix.macros-clj :refer [try-current-implementation eps== native-array?]])
+              [clojure.core.matrix.macros-clj :refer [try-current-implementation eps== native-array?]]
+              [clojure.math.numeric-tower :as numeric-tower])
             (:import [clojure.lang ISeq])]
       :cljs [(:require-macros
                [clojure.core.matrix.impl.defaults :refer [def-PMathsFunctions def-PMathsFunctionsMutable]]

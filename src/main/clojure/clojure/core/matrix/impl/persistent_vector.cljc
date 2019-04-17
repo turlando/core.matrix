@@ -13,7 +13,8 @@
             [clojure.core.matrix.impl.common :refer [mapmatrix]]
             [clojure.core.matrix.impl.mathsops :as mops]
   #?@(:clj [[clojure.core.matrix.macros :refer [scalar-coerce error doseq-indexed]]
-            [clojure.core.matrix.macros-clj :refer [native-array?]]]))
+            [clojure.core.matrix.macros-clj :refer [native-array?]]
+            [clojure.math.numeric-tower :as numeric-tower]]))
 
   #?(:clj (:import [clojure.lang IPersistentVector Indexed]
                    [java.util List])

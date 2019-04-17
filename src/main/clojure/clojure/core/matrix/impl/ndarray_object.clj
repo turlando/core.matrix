@@ -9,6 +9,7 @@
             [clojure.core.matrix.macros :refer :all]
             [clojure.core.matrix.macros-clj :refer :all]
             [clojure.core.matrix.impl.ndarray-macro :refer :all]
-            [clojure.core.matrix.impl.ndarray :refer :all]))
+            [clojure.core.matrix.impl.ndarray :refer :all]
+            [clojure.math.numeric-tower :as numeric-tower]))
 
 (magic/spit-code :object)
