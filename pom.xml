@@ -80,6 +80,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>math.numeric-tower</artifactId>
+      <version>0.0.4</version>
+    </dependency>
 	</dependencies>
 
 	<licenses>

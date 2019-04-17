@@ -13,6 +13,7 @@
              {:dependencies
               [[net.mikera/vectorz-clj "0.43.1" :exclusions [net.mikera/core.matrix]]
                [clatrix "0.5.0" :exclusions [net.mikera/core.matrix]]
+               [org.clojure/math.numeric-tower "0.0.4"]
                [org.clojure/test.check "0.9.0"]
                [net.mikera/cljunit "0.4.0"]
                [criterium/criterium "0.4.3"]
