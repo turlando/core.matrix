@@ -2167,7 +2167,7 @@
     (diagonal-matrix [m diagonal-values]
       (let [dims (count diagonal-values)
             diagonal-values (mp/convert-to-nested-vectors diagonal-values)
-            zs (vec (repeat dims 0.0))
+            zs (vec (repeat dims 0))
             dm (vec (for [i (range dims)]
                  (assoc zs i (nth diagonal-values i))))]
         (mp/coerce-param m dm))))
